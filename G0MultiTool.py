@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from paramiko import SSHClient, AutoAddPolicy
 
 import os.path
@@ -23,20 +24,15 @@ os.system('clear')
 
 print(Fore.BLUE + '>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<')
 print('>                                                                                                                                                                                         <')
-print(Fore.RED + '>                                                                          »  made by  sm  «                                                                                              <')
+print(Fore.RED + '>                                                                          »  made by  Gr0tten0lm  «                                                                                      <')
 print(Fore.BLUE + '>                                                                                                                                                                                         <')
 print('>                                                                                                                                                                                         <')
 print(Fore.BLUE + '>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<')
-print(Fore.GREEN + '           \           \                                                       |                                                                           |')
-print('            \           \                                                      |                                                                           |')
-print('             \           \                                                     |                                                                           |')
-print('              \           \                                                    |                                                                           |')
-print('|--------------            \                                                   |                            |----------------------|                       |')
-print('|                           |                                                  |                            |                      |                       |')
-print('|                           |                                                  |                            |                      |                       |')
-print('|---------------------------|                                                  |                            |                      |                       |')
-print('                                                                               |                            |                      |                       |')
-print('                                                                               |----------------------------|                      |-----------------------|')
+
+print(Fore.RED + "Version 1.1")
+
+print(Fore.RED + "Welcome to my Multi Tool!")
+
 
 
 
@@ -250,8 +246,5 @@ if '5' in option:
                                 print(Fore.LIGHTCYAN_EX + "|+| subdomain found! > ", url)
 
                                 subs_disc.append(url)
-
-
-
 
 
