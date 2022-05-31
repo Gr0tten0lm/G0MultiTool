@@ -3,7 +3,7 @@ This is a Multi Tool with multiple options.
 
 [+] This tool is only tested on Parrot OS!
 
-[+] Metasploit must be preinstalled!
+[+] Metasploit and Nmap must be preinstalled!
 
 -------------------------------------------------------------------->
 
