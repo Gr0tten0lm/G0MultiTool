@@ -29,7 +29,7 @@ print(Fore.BLUE + '>                                                            
 print('>                                                                                                                                                                                         <')
 print(Fore.BLUE + '>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<')
 
-print(Fore.RED + "Version 1.1")
+print(Fore.RED + "Version 1.11")
 
 print(Fore.RED + "Welcome to my Multi Tool!")
 
@@ -181,7 +181,34 @@ if '3' in option:
 
 if '4' in option:
 
-        print('------------------')
+        connect = input(Fore.LIGHTYELLOW_EX + 'Mail Server:Port > ')
+
+        user = input('Username > ')
+
+        pwd = input('Password > ')
+
+        server = smtplib.SMTP(connect)
+        server.starttls()
+        server.login(user, pwd)
+
+        mailtext = input('Mail Text, end with ^D > ')
+
+        subj = input('Subject > ')
+
+        MAIL_FROM = input('From where the mail is sent > ')
+
+        RCPT_TO = input('The mail address of the recipient > ')
+
+
+        DATA = '("From: %s\r\nTo: %s\r\n\r\n"
+                % (MAIL_FROM, ", ".join(RCPT_TO)))
+
+
+        server = smtplib.SMTP(connect)
+        server.starttls()
+        server.login(user, pwd)
+        server.sendmail(MAIL_FROM, RCPT_TO, DATA)
+        server.quit()
 
 
 
