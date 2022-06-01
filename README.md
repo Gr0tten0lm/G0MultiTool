@@ -19,7 +19,9 @@ This is a Multi Tool with multiple options.
 
 git clone https://github.com/Gr0tten0lm/G0MultiTool.git
 
-pip instaall -r requirements.txt
+cd G0MultiTool
+
+python3 install.py
 
 python3 G0MultiTool.py
 
