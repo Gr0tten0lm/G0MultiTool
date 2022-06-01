@@ -99,6 +99,14 @@ if '1' in option:
                 os.system('mcs windows.cs')
 
                 print(Fore.BLUE + "The File is now ready!")
+                
+                metasploit = input('Do you want to start the listener ? yes/no ')
+
+                if 'yes' in metasploit:
+                        os.system('metasploit')
+
+                else:
+                        print('Done')
 
 
 
@@ -124,6 +132,14 @@ if '1' in option:
                 os.system('mcs Program.cs')
 
                 print(Fore.BLUE + "The File is now ready!")
+                
+                metasploit = input('Do you want to start the listener ? yes/no ')
+
+                if 'yes' in metasploit:
+                        os.system('metasploit')
+
+                else:
+                        print('Done')
 
 
 
@@ -200,8 +216,8 @@ if '4' in option:
         RCPT_TO = input('The mail address of the recipient > ')
 
 
-        DATA = '("From: %s\r\nTo: %s\r\n\r\n"
-                % (MAIL_FROM, ", ".join(RCPT_TO)))
+        DATA = "From: %s\r\nTo: %s\r\n\r\n"
+                
 
 
         server = smtplib.SMTP(connect)
